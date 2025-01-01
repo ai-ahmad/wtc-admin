@@ -530,12 +530,12 @@ const Products = () => {
                       ) : product.image.all_images &&
                         product.image.all_images.length > 0 ? (
                         <img
-                          src={`https://bakend-wtc.onrender.com/${product.image.all_images[0]}`}
+                          src={`https://bakend-wtc.onrender.com${product.image.all_images[0]}`}
                           alt={product.name}
                           className="w-16 h-16 object-cover inline-block mr-2 cursor-pointer"
                           onClick={() =>
                             openImageModal(
-                              `https://bakend-wtc.onrender.com/${product.image.all_images[0]}`
+                              `https://bakend-wtc.onrender.com${product.image.all_images[0]}`
                             )
                           }
                         />
